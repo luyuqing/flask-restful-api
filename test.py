@@ -11,8 +11,9 @@ cursor.execute(insert_query, user)
 
 users = [
     (2, 'keke', 'asdf'),
-    (3, 'vivi', 'jklø')
+    (3, 'vivi', 'jkl')
 ]
+
 cursor.executemany(insert_query, users)
 
 select_query = 'SELECT * FROM users'
